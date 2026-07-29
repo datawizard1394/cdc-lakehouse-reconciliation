@@ -16,6 +16,7 @@ from cdc_reconciliation.io import (
     sha256_file,
 )
 
+
 @dataclass(frozen=True)
 class CDCConfig:
     seed: int = 20260728
