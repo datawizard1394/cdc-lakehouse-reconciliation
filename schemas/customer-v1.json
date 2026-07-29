@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Synthetic portfolio contract; documentation mirrors runtime validation.",
+  "properties": {
+    "country": {
+      "type": "string"
+    },
+    "email": {
+      "format": "email",
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "name",
+    "email",
+    "country"
+  ],
+  "title": "Synthetic customer payload v1",
+  "type": "object"
+}
+

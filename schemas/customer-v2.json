@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Backward-compatible synthetic v2 adds optional loyalty_tier.",
+  "properties": {
+    "country": {
+      "type": "string"
+    },
+    "email": {
+      "format": "email",
+      "type": "string"
+    },
+    "loyalty_tier": {
+      "enum": [
+        "bronze",
+        "silver",
+        "gold"
+      ],
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    }
+  },
+  "title": "Synthetic customer payload v2",
+  "type": "object"
+}
+
