@@ -1,0 +1,15 @@
+{
+  "active_entity_count": 22,
+  "delivered_events": 47,
+  "disclosure": "Synthetic portfolio evidence; not a production run.",
+  "duplicate_deliveries_ignored": 7,
+  "history_row_count": 36,
+  "ledger_event_count": 40,
+  "newly_applied_events": 38,
+  "newly_quarantined_events": 2,
+  "previously_processed_events_skipped": 0,
+  "reconciliation_passed": true,
+  "synthetic": true,
+  "unique_events_in_batch": 40
+}
+

@@ -1,0 +1,11 @@
+{
+  "difference_count": 0,
+  "disclosure": "Synthetic portfolio evidence; not a production reconciliation.",
+  "missing_in_target": [],
+  "passed": true,
+  "source_active_count": 22,
+  "target_active_count": 22,
+  "unexpected_in_target": [],
+  "value_mismatches": []
+}
+
