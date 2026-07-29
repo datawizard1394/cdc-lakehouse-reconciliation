@@ -46,7 +46,7 @@ QUARANTINE_FIELDS = (
 
 
 def _surrogate_key(entity_id: str, valid_from: str) -> str:
-    return hashlib.sha256(f"{entity_id}|{valid_from}".encode("utf-8")).hexdigest()[:20]
+    return hashlib.sha256(f"{entity_id}|{valid_from}".encode()).hexdigest()[:20]
 
 
 class CDCProcessor:

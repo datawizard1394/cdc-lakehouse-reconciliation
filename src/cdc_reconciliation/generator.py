@@ -5,7 +5,7 @@ from __future__ import annotations
 import hashlib
 import random
 from dataclasses import asdict, dataclass
-from datetime import datetime, timedelta, timezone
+from datetime import UTC, datetime, timedelta
 from pathlib import Path
 from typing import Any
 
@@ -15,9 +15,6 @@ from cdc_reconciliation.io import (
     atomic_write_jsonl,
     sha256_file,
 )
-
-UTC = timezone.utc
-
 
 @dataclass(frozen=True)
 class CDCConfig:
@@ -190,4 +187,3 @@ def generate_cdc_dataset(output_dir: Path, config: CDCConfig) -> dict[str, Any]:
     }
     atomic_write_json(output_dir / "generator_manifest.json", manifest)
     return manifest
-
